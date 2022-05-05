@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Check the Date</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    // Keys to access the Back4App database
+    <string name="back4app_app_id">E4ZtbmojHrpjmvkVsabUhiV0Ot9LY1Sr01l718gC</string>
+    <string name="back4app_client_key">ZBppKzApCBcqLqNPfpsMKEeU1BoZbmdRhNYSiTJt</string>
+    <string name="txt_username">Username</string>
+    <string name="txt_password">Password</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="btn_register">New? Click here to register now!</string>
+    <string name="txt_reg_username">Username</string>
+    <string name="txt_reg_password">Password</string>
+    <string name="txt_reg_confirm_password">Confirm Password</string>
+    <string name="btn_reg">Register Account</string>
+    <string name="txt_welcome">Welcome!</string>
+    <string name="txt_logout">Log Out</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_email_reset">Email</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_forgot_password">Forgot Password?</string>
+    <string name="txt_reset_email">Please enter your email to reset password:</string>
+    <string name="btn_main_inventory">Household Inventory</string>
+    <string name="btn_main_shopping">Shopping List</string>
+    <string name="btn_main_recipes">Recipes</string>
+    <string name="btn_add_item">Add Item</string>
+    <string name="btn_manually_add">Manually Add Item</string>
+    <string name="btn_add_product_to_inventory">Add Item to Inventory</string>
+    <string name="btn_add_item_shopping_nav">Add Item to Shopping List</string>
+    <string name="edt_txt_product_name_list">Product Name</string>
+    <string name="edt_txt_quantity">Quantity</string>
+    <string name="btn_add_item_list">Add Item</string>
+    <string name="btn_delete_items">Delete selected items</string>
+    <string name="btn_fresh">Fresh</string>
+    <string name="btn_frozen">Frozen</string>
+    <string name="btn_cupboard">Cupboard</string>
+    <string name="btn_delete_selected">Delete Selected</string>
+    <string name="btn_add_selected_to_shopping">Add Selected to Shopping</string>
+    <string name="btn_search_recipes">Search for Recipes</string>
+    <string name="txt_inventory_instruction">Check items to delete, add to shopping list or search for recipes</string>
+    <string name="txt_shopping_list_title">Welcome to your shopping list!</string>
+    <string name="txt_manual_add">Complete scanned item details or manually enter item details</string>
+    <string-array name="productTypes">
+        <item>Fresh</item>
+        <item>Frozen</item>
+        <item>Cupboard</item>
+    </string-array>
+    <string-array name="productTypesList">
+        <item>Fresh</item>
+        <item>Frozen</item>
+        <item>Cupboard</item>
+        <item>Misc.</item>
+    </string-array>
+
+</resources>

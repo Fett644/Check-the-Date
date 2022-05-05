@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#8BC34A"
+    tools:context=".HouseholdInventoryActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_inventory_welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/check_the_date_logo_alt1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inventory_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInstructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <Button
+        android:id="@+id/btn_inventory_shopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="@string/btn_main_shopping"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textView_inventory_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/inventory_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_inventory_welcome">
+
+        <Button
+            android:id="@+id/buttonFresh"
+            android:layout_width="115dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btn_fresh"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="165dp" />
+
+        <Button
+            android:id="@+id/buttonFrozen"
+            android:layout_width="115dp"
+            android:layout_height="45dp"
+            android:text="@string/btn_frozen"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="165dp" />
+
+        <Button
+            android:id="@+id/buttonCupboard"
+            android:layout_width="115dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn_cupboard"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="155dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_inventory_shopping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInstructions">
+
+
+        <Button
+            android:id="@+id/btn_add_item"
+            android:layout_width="88.75dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn_add_item"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="539dp" />
+
+
+        <Button
+            android:id="@+id/buttonDeleteInventory"
+            android:layout_width="88.75dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#FA0404"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="587dp" />
+
+        <Button
+            android:id="@+id/buttonAddShopping"
+            android:layout_width="88.75dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#8BC34A"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconGravity="textStart"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="587dp" />
+
+        <Button
+            android:id="@+id/buttonRecipe"
+            android:layout_width="88.75dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:icon="@android:drawable/ic_menu_search"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/txt_inventory_instruction"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventory_list" />
+
+    <TextView
+        android:id="@+id/textViewInventoryBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="32dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

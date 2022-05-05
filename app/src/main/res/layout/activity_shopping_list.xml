@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingListActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="340dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/check_the_date_logo_alt1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="@string/txt_shopping_list_title"
+        app:layout_constraintBottom_toTopOf="@+id/reclycherViewShopping"
+        app:layout_constraintEnd_toEndOf="@+id/reclycherViewShopping"
+        app:layout_constraintStart_toStartOf="@+id/reclycherViewShopping"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/buttonAddItemShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="@string/btn_add_item_shopping_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeleteShopping" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reclycherViewShopping"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDeleteShopping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/buttonDeleteShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/btn_delete_items"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddItemShopping"
+        app:layout_constraintStart_toStartOf="@+id/buttonAddItemShopping"
+        app:layout_constraintTop_toBottomOf="@+id/reclycherViewShopping" />
+
+    <TextView
+        android:id="@+id/textViewListGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAddItemShopping"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddItemShopping"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddItemShopping" />
+</androidx.constraintlayout.widget.ConstraintLayout>

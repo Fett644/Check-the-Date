@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManuallyAddItem">
+
+    <TextView
+        android:id="@+id/textViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="54dp"
+        android:onClick="goBack"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Add_Product" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="340dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewManualWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/check_the_date_logo_alt1" />
+
+    <TextView
+        android:id="@+id/textViewManualWelcome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="91dp"
+        android:text="@string/txt_manual_add"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/editText_Product_Barcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <EditText
+        android:id="@+id/editText_Product_Barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Product Barcode"
+        android:inputType="number|textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_Product_Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewManualWelcome" />
+
+    <EditText
+        android:id="@+id/editText_Product_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Product Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText_Expiry_Date"
+        app:layout_constraintStart_toStartOf="@+id/editText_Product_Barcode"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Product_Barcode" />
+
+    <Button
+        android:id="@+id/button_Add_Product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/btn_add_product_to_inventory"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBack"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBack"
+        app:layout_constraintTop_toBottomOf="@+id/productTypeDropdown" />
+
+    <EditText
+        android:id="@+id/editText_Expiry_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Expiry Date"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/productTypeDropdown"
+        app:layout_constraintStart_toStartOf="@+id/editText_Product_Name"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Product_Name" />
+
+    <Spinner
+        android:id="@+id/productTypeDropdown"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Add_Product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Expiry_Date" />
+</androidx.constraintlayout.widget.ConstraintLayout>
