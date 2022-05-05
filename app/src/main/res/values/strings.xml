@@ -3,8 +3,8 @@
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
 
     // Keys to access the Back4App database
-    <string name="back4app_app_id">E4ZtbmojHrpjmvkVsabUhiV0Ot9LY1Sr01l718gC</string>
-    <string name="back4app_client_key">ZBppKzApCBcqLqNPfpsMKEeU1BoZbmdRhNYSiTJt</string>
+    <string name="back4app_app_id"></string>
+    <string name="back4app_client_key"></string>
     <string name="txt_username">Username</string>
     <string name="txt_password">Password</string>
     <string name="btn_signin">Sign In</string>
